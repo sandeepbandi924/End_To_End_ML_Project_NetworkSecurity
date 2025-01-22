@@ -1,4 +1,4 @@
-from networksecurity.entity.artifact_entity import DataIngestionArtifacts,DataValidationArtifact
+from networksecurity.entity.artifact_entity import DataIngestionArtifact,DataValidationArtifact
 from networksecurity.entity.config_entity import DataValidationConfig
 from networksecurity.exception.exception import NetworkSecurityException 
 from networksecurity.logging.logger import logging 
@@ -9,7 +9,7 @@ import os,sys
 from networksecurity.utils.main_utils.utils import read_yaml_file,write_yaml_file
 
 class DataValidation:
-    def __init__(self,data_ingestion_artifact:DataIngestionArtifacts,
+    def __init__(self,data_ingestion_artifact:DataIngestionArtifact,
                  data_validation_config:DataValidationConfig):
         
         try:
@@ -109,8 +109,6 @@ class DataValidation:
             return data_validation_artifact
         except Exception as e:
             raise NetworkSecurityException(e,sys)
-
-
 
 
 
