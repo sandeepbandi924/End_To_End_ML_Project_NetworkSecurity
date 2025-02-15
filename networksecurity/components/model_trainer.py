@@ -25,11 +25,15 @@ from sklearn.ensemble import (
 
 import mlflow
 
+import dagshub
+dagshub.init(repo_owner='sandeepbandi924', repo_name='End_To_End_ML_Project_NetworkSecurity', mlflow=True)
+
+
 class ModelTrainer:
-    def __init__(self,model_trainer_config:ModelTrainerConfig,data_tranformation_artifact:DataTransformationArtifact):
+    def __init__(self,model_trainer_config:ModelTrainerConfig,data_transformation_artifact:DataTransformationArtifact):
         try:
             self.model_trainer_config = model_trainer_config
-            self.data_transformation_artifact = data_tranformation_artifact
+            self.data_transformation_artifact = data_transformation_artifact
 
         except Exception as e:
             raise NetworkModel(e,sys)
@@ -114,6 +118,7 @@ class ModelTrainer:
 
         Network_Model=NetworkModel(preprocessor=preprocessor,model=best_model)
         save_object(self.model_trainer_config.trained_model_file_path,obj=NetworkModel)
+
 
         #model pusher
         save_object("final_models/model.pkl",best_model)

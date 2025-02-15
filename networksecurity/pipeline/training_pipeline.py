@@ -9,6 +9,7 @@ from networksecurity.components.data_validation import DataValidation
 from networksecurity.components.data_transformation import DataTransformation
 from networksecurity.components.model_trainer import ModelTrainer
 
+#config
 from networksecurity.entity.config_entity import(
     TrainingPipelineConfig,
     DataIngestionConfig,
@@ -16,7 +17,7 @@ from networksecurity.entity.config_entity import(
     DataTransformationConfig,
     ModelTrainerConfig,
 )
-
+#artifact
 from networksecurity.entity.artifact_entity import (
     DataIngestionArtifact,
     DataValidationArtifact,
@@ -54,9 +55,7 @@ class TrainingPipeline:
     def start_data_transformation(self,data_validation_artifact:DataValidationArtifact):
         try:
             data_transformation_config = DataTransformationConfig(training_pipeline_config=self.training_pipeline_config)
-            data_transformation = DataTransformation(data_validation_artifact=data_validation_artifact,
-            data_transformation_config=data_transformation_config)
-            
+            data_transformation = DataTransformation(data_validation_artifact=data_validation_artifact,data_transformation_config=data_transformation_config)
             data_transformation_artifact = data_transformation.initiate_data_transformation()
             return data_transformation_artifact
         except Exception as e:
