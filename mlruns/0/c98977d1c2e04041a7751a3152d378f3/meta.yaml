@@ -1,0 +1,15 @@
+artifact_uri: file:///S:/MLOPS/NetworkSecurity/mlruns/0/c98977d1c2e04041a7751a3152d378f3/artifacts
+end_time: 1739605296026
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c98977d1c2e04041a7751a3152d378f3
+run_name: adaptable-seal-277
+run_uuid: c98977d1c2e04041a7751a3152d378f3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1739605291020
+status: 3
+tags: []
+user_id: Sandeep Bandi

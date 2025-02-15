@@ -1,0 +1,15 @@
+artifact_uri: file:///S:/MLOPS/NetworkSecurity/mlruns/0/11733d2fddd149ad8368f85b499f14a9/artifacts
+end_time: 1739605587693
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 11733d2fddd149ad8368f85b499f14a9
+run_name: rare-shrimp-284
+run_uuid: 11733d2fddd149ad8368f85b499f14a9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1739605585094
+status: 3
+tags: []
+user_id: Sandeep Bandi
