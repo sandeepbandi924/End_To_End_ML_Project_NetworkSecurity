@@ -100,7 +100,7 @@ curl -X POST "http://127.0.0.1:8000/predict" -H "Content-Type: application/json"
 ## 💡 Author
 👤 **Sandeep Bandi**
 - GitHub: [sandeepbandi924](https://github.com/sandeepbandi924)
-- LinkedIn: [Your LinkedIn Profile](#)
+- LinkedIn: [sandeepbandi](https://www.linkedin.com/in/sandeepbandi/)
 
 ---
 ## 📜 License
