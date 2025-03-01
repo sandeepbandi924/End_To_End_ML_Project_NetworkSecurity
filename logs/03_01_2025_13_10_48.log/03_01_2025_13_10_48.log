@@ -1,0 +1,6 @@
+[ 2025-03-01 13:10:53,534 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2025-03-01 13:10:53,547 ] 107 dagshub - INFO - Accessing as sandeepbandi924
+[ 2025-03-01 13:10:54,043 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/sandeepbandi924/End_To_End_ML_Project_NetworkSecurity "HTTP/1.1 200 OK"
+[ 2025-03-01 13:10:54,480 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2025-03-01 13:10:54,491 ] 107 dagshub - INFO - Initialized MLflow to track repo "sandeepbandi924/End_To_End_ML_Project_NetworkSecurity"
+[ 2025-03-01 13:10:54,493 ] 107 dagshub - INFO - Repository sandeepbandi924/End_To_End_ML_Project_NetworkSecurity initialized!
