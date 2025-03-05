@@ -9,5 +9,6 @@ mlflow
 fastapi
 uvicorn
 dagshub
-
+streamlit
+joblib
 # -e .
